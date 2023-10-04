@@ -11,19 +11,20 @@ const Clicker = () => {
   const [level, setLevel] = useState(0);
 
   const addPoints = () => {
-    if (level == 1) {
-      setCounter(counter + 2);
-    } else if (level == 2) {
-      setCounter(counter + 3);
-    } else if (level == 3) {
-      setCounter(counter + 4);
-    }
     if (numberOfBuildings == 0) {
       setCounter(counter + 1);
       setGold(gold + 1);
     } else {
       setCounter(counter + buildings.length + 1);
       setGold(gold + buildings.length + 1);
+    }
+
+    if (level == 1) {
+      setCounter(counter + 2);
+    } else if (level == 2) {
+      setCounter(counter + 3);
+    } else if (level == 4) {
+      setCounter(counter + 4);
     }
   };
 
@@ -84,7 +85,7 @@ const Clicker = () => {
             </button>
           )}
           {gold >= 30 && (
-            <button onClick={(e) => buyBuilding(e)} value={3}>
+            <button onClick={(e) => buyBuilding(e)} value={4}>
               Upgrade +4
             </button>
           )}
