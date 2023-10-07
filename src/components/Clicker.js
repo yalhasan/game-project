@@ -1,3 +1,4 @@
+import { toBePartiallyChecked } from "@testing-library/jest-dom/matchers";
 import React, { useState } from "react";
 
 let buildings = [];
@@ -39,12 +40,13 @@ const Clicker = () => {
     <div className="background">
       <div className="goldposition">
         <div className="upgrade">
-          <h2>the number of upgrades you have is: {numberOfBuildings}</h2>
+          <h2> Your UPGRADES: {numberOfBuildings}</h2>
         </div>
         <div className="gold">
           <img
             className="imgdesign"
-            src="https://www.pngall.com/wp-content/uploads/5/Game-Gold-Coin-PNG-Photo.png"
+            src="https://cdn-icons-png.flaticon.com/512/3044/3044876.png"
+            // https://www.pngall.com/wp-content/uploads/5/Game-Gold-Coin-PNG-Photo.png"
           />
           <h3>{gold}</h3>
         </div>
@@ -55,7 +57,11 @@ const Clicker = () => {
           <h1>{counter}</h1>
         </div>
         <button className="clicker" onClick={addPoints} value={1}>
-          <h3>clicker</h3>
+          {/* <h3>clicker</h3> */}
+          <img
+            className="imgclickerdesign"
+            src="https://img.lovepik.com/element/40155/5207.png_300.png"
+          />
         </button>
 
         <div className="buyposition">

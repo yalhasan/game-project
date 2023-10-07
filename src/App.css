@@ -47,38 +47,52 @@
 
 .center {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   width: 90vw;
   height: 90vh;
   z-index: 0;
+  padding: 10px;
 }
 
 .clicker {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: white;
+  height: 80px;
+  width: 80px;
+  /* object-fit: fill; */
   border-radius: 50%;
-  font-size: medium;
-  margin-top: 20px;
+  /* width: 100px;
+  height: 100px; */
+  /* background-color: red; */
+  /* color: white; */
+  /* border-radius: 50%; */
+  /* font-size: medium;
+  margin-top: 20px; */
+}
+
+.imgclickerdesign {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  /* opacity: 0.5; */
 }
 
 .gold {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: larger;
-  background-color: rgb(210, 88, 238);
-  color: black;
-  width: 130px;
-  height: 50px;
-  border-radius: 30px;
-  margin: 20px;
+  /* flex-direction: column; */
+  font-size: 25px;
+  /* background-color: rgb(210, 88, 238); */
+  color: rgb(212, 161, 31);
+
+  /* width: 130px;
+  height: 75px; */
+  /* border-radius: 30px; */
+  /* margin: 20px; */
 }
 
 .goldposition {
@@ -90,21 +104,25 @@
 .background {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(100, 211, 100);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   position: relative;
 }
 
 .counter {
-  color: white;
-  background-color: black;
+  color: rgb(6, 6, 6);
+  font-family: "Teko", sans-serif;
+  /* font-size: small; */
+  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 70px;
-  font-size: larger;
+  /* width: 120px;
+  height: 70px; */
+  font-size: 500px;
   border-radius: 20px;
+
+  font-size: 50px;
 }
 
 .imgdesign {
@@ -126,8 +144,9 @@
   width: 100px;
   height: 100px;
   margin: 10px;
-  background-color: rgb(215, 242, 253);
+  background-color: rgba(223, 216, 216, 0.721);
   border-radius: 20px;
+  font-family: "Pixelify Sans";
 }
 
 .upgrade {
@@ -137,6 +156,10 @@
   margin: 30px;
   background-color: beige;
   border-radius: 20px;
-  width: 500px;
+  width: 300px;
   height: 40px;
+  font-family: "Pixelify Sans";
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap");
