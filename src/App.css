@@ -49,7 +49,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #61dafb;
   flex-direction: column;
   width: 90vw;
   height: 90vh;
@@ -74,22 +73,24 @@
   justify-content: center;
   align-items: center;
   font-size: larger;
-  background-color: gold;
+  background-color: rgb(210, 88, 238);
   color: black;
-  width: 75px;
+  width: 130px;
   height: 50px;
+  border-radius: 30px;
+  margin: 20px;
 }
 
 .goldposition {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: end;
 }
 
 .background {
   width: 100vw;
   height: 100vh;
-  background-color: green;
+  background-color: rgb(100, 211, 100);
   padding: 20px;
   position: relative;
 }
@@ -100,14 +101,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  width: 120px;
   height: 70px;
   font-size: larger;
+  border-radius: 20px;
 }
 
 .imgdesign {
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
 }
 
 .buyposition {
@@ -116,6 +118,25 @@
   align-items: center;
   z-index: 1;
   color: black;
-  background-color: red;
   flex-direction: row;
+  margin: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: rgb(215, 242, 253);
+  border-radius: 20px;
+}
+
+.upgrade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  background-color: beige;
+  border-radius: 20px;
+  width: 500px;
+  height: 40px;
 }
